@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+	<title>Evaluación - Adivina el número</title>
+</head>
+
+<body onload="typeEffect()">
+	<div class="overflow">
+		<!-- <header></header> --><!-- CABECERA-->
+		<main>
+			<div class="container"><!-- CONTENEDOR PRINCIPAL-->
+				<div class="container_game"><!-- CONTENEDOR JUEGO-->
+
+					<div class="container_game_top_block"> <!-- SECCIÓN TITULO-->
+						<h1 class="container_game_title" id="game_title"></h1><br>
+						<p class="container_game_question">¿Sabes en qué número estoy pensando?</p>
+					</div>
+
+					<div class="game_section"><!-- SECCIÓN JUEGO-->
+						<div class="game_section_top_block"><!-- SECCIÓN SUPERIOR JUEGO-->
+							<div class="top"></div>
+							<div class="bottom">
+								<h2 class="game_section_title">Escribe un número del 1 al 100</h2>
+								<div class="trophy_container">
+									<img src="img/scores.png" alt="high scores" class="scores_image" >
+								</div>
+							</div>
+						</div><!-- FIN SECCIÓN SUPERIOR JUEGO-->
+
+						<div class="game_section_bottom_block"><!-- SECCIÓN INFERIOR JUEGO-->
+							<div class="number_section">
+								<input type="text" name="number" id="number" placeholder="Tu número">
+							</div>
+							<div class="play_button">
+								<button type="button" class="btn play" name="play" id="play">JUGAR</button>
+							</div>
+							<div id="message1"></div>
+							<div id="message"></div>
+							<div id="hint"> <!--seccion pistas-->
+								<div id="hint_text"></div>
+								<div id="hint_image"></div>
+							</div>
+							<div class="player_section" id="player_section">
+								<div class="inside_player_section"></div>
+								<input type="text" name="player" id="player" placeholder="Introduce tu nombre">
+								<button class="btn send_player" id="send_player">ENVIAR</button>
+								<button class="btn try_again" id="try_again">JUGAR OTRA VEZ</button>
+							</div>
+							<div id="guessCount"></div>
+						</div><!-- END SECCIÓN INFERIOR JUEGO-->
+					</div><!-- SECCIÓN JUEGO-->
+				</div> <!--END CONTAINER JUEGO-->
+
+
+				<div class="container_scores" id="scores"><!-- CONTENEDOR PUNTUACIÓN-->
+					<div class="close_section">
+						<img src="img/cancel.png" alt="boton cerrar" class="close_scores">
+					</div>
+					<div class="container_scores_top_block">
+						<h2 class="container_scores_title">MEJORES PUNTUACIONES</h2>
+						<div>
+							<ul id="scores_list" class="scores_list"></ul>
+						</div>
+					</div>
+				</div><!-- END CONTENEDOR PUNTUACIÓN-->
+
+			</div><!--END CONTAINER PRINCIPAL-->
+		</main>
+
+		<!-- <footer></footer>--> <!-- FOOTER-->
+		</div>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
