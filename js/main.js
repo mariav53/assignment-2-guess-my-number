@@ -31,7 +31,7 @@ function getRandomNumber(){
   return Math.ceil((Math.random() * 100));
 }
 var randomNumber = getRandomNumber();
-document.querySelector('#message1').innerHTML = "<p>el numero aleatorio es " + randomNumber+"</p>";
+// document.querySelector('#message1').innerHTML = "<p>el numero aleatorio es " + randomNumber+"</p>";
 
 //SECCIÓN JUEGO
 //variables necesarias
@@ -171,7 +171,7 @@ function resetGame() {
   guessCounter();
   clearFields();
   randomNumber = getRandomNumber();
-  document.querySelector('#message1').innerHTML = "<p>el numero aleatorio es " + randomNumber+"</p>";
+  // document.querySelector('#message1').innerHTML = "<p>el numero aleatorio es " + randomNumber+"</p>";
 				play.disabled =false;
 }
 
